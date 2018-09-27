@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewData["Title"] = "Login";
+    Layout = null;
+}
+<head>
+    <link rel="stylesheet" href="~/css/login.css" />
+</head>
+
+<body background="Images/bg.jpg">
+
+    <form asp-action="LoginVerify">
+
+        <div class="title" style="margin-top:100px;margin-left:500px;">
+            <span class="title-eds"><img src="images/logo.png"></span>
+        </div>
+
+        <div class="login-form" style="display:block" id="loginDiv">
+            <div class="switch-language" style="margin-top:20px; margin-left:10px">
+                <a href="ForgetPwKey.aspx"><img title="忘记密码" src="images/password.png" /></a>&nbsp;&nbsp;
+            </div>
+            <div class="user-no">
+                <!--   <p class="input-title">
+                   工号</p>-->
+                <input type="text" name="UserId" id="UserId" value="admin" style="width:300px;margin-left:-1px;" />
+            </div>
+            <div class="user-pwd">
+                <!-- <p class="input-title">
+                 密码</p>-->
+                <input type="password" name="UserPsd" id="UserPassword" value="cube00001" style="width:300px;margin-left:-1px;" />
+            </div>
+            <p class="forget-pwd">
+            </p><br />
+            <button id="btnSubmit" type="submit" calss="btn btn-primary">
+                登录
+            </button><br /><br />
+
+
+        </div>
+    </form>
+    <br /><br /><br /><br />
+</body>

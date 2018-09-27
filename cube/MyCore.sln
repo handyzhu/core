@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCore", "MyCore\MyCore.csproj", "{2FFA5745-C59F-4787-B809-5D478A52F69E}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{AAB8A8CD-D968-41F1-8750-683636490A57}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{C2985B65-212D-4570-A5A7-F37E407CD5E0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2FFA5745-C59F-4787-B809-5D478A52F69E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FFA5745-C59F-4787-B809-5D478A52F69E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FFA5745-C59F-4787-B809-5D478A52F69E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FFA5745-C59F-4787-B809-5D478A52F69E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAB8A8CD-D968-41F1-8750-683636490A57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAB8A8CD-D968-41F1-8750-683636490A57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAB8A8CD-D968-41F1-8750-683636490A57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAB8A8CD-D968-41F1-8750-683636490A57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2985B65-212D-4570-A5A7-F37E407CD5E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2985B65-212D-4570-A5A7-F37E407CD5E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2985B65-212D-4570-A5A7-F37E407CD5E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2985B65-212D-4570-A5A7-F37E407CD5E0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7482C836-6C88-4B20-AB9B-E81ACF1A7BF9}
+	EndGlobalSection
+EndGlobal

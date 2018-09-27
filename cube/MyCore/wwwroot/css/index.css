@@ -1,0 +1,98 @@
+html,body,p,div, dl,dt{
+	padding: 0;
+	margin: 0;
+}
+.main{
+	width:100%;
+	height:100%
+}
+.index-page{
+	max-width:1200px;
+	margin:0 auto;
+}
+.warn-info{
+	text-align: center;
+    height: 36px;
+    line-height: 36px;
+    background: #fee4e5;
+    color: #fe3638;
+    font-size: 13px;
+}
+.titles{
+	margin: 30px 0;
+}
+.titles p{
+	line-height: 1.8;
+	font-size: 14px;
+	color: #333;
+}
+.gs{
+	color: #266be4;
+}
+.gs .number{
+	font-size: 24px;
+}
+.gs-1{
+	margin: 0 15px;
+	font-size: 15px;
+}
+.form-group{
+	margin-left: 50px;
+	color: #333;
+	font-size: 15px;
+}
+.form-group .list, .list p{
+	margin: 26px 0;
+}
+.list .input-info{
+	border: none;
+    border-bottom: solid 1px #ccc;
+    outline: none;
+}
+.main-2{
+	background: #f7faff;
+	padding: 30px 0;
+	margin: 0 auto;
+}
+.main-4{
+	background: white;
+	background: #fff;
+	padding: 30px 0;
+	margin: 0 auto;
+}
+.list .form-color{
+	background: #f7faff;
+	margin: 0 30px;
+	width: 400px;
+}
+.box-info{
+	display: flex;
+}
+.list.project-name {
+    margin: 0;
+}
+.circle-info {
+    width: 20px;
+    height: 20px;
+    background: #266be4;
+    text-align: center;
+    border-radius: 100%;
+    color: white;
+    margin-top: 26px;
+    margin-right: 22px;
+}
+.btn-form{
+	text-align: center;
+	padding: 30px 0;
+}
+.btn-form .box-btn{
+	width: 130px;
+    height: 36px;
+    line-height: 36px;
+    background: none;
+    background: #266be4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
