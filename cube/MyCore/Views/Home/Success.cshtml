@@ -9,7 +9,11 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>登陆成功</title>
-    
+    @if (TempData["msg"]!= null) { 
+
+        <script>alert(@TempData["msg"])</script>
+        
+    }
 </head>
 <body>
     登陆账户为： @TempData["id"]  <br />

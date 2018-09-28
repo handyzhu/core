@@ -7,6 +7,10 @@ using Microsoft.AspNetCore.Mvc;
 using MyCore.Models;
 using Infrastructure;
 using Microsoft.Extensions.Configuration;
+using WebApi;
+using System.Data;
+using Microsoft.AspNetCore.Http;
+
 namespace MyCore.Controllers
 {
     public class HomeController : Controller
@@ -52,21 +56,25 @@ namespace MyCore.Controllers
         /// <returns></returns>
         public IActionResult LoginVerify(string UserId, string UserPsd) {
             
-            TempData["id"] = UserId;
-            TempData["pwd"]= Md5.Encrypt(UserPsd);
-
+            
             
             int count = dbHelp.db.Queryable<Login>().Where(i => i.ActiveFlag == "0" && i.UserID == UserId && i.Password == Md5.Encrypt(UserPsd)).ToList().Count;
 
             if (count == 1)
             {
-                TempData["result"] = "ok";
+                new WebApi.Service.LoginService().InsertLoginInfo(UserId);
+                HttpContext.Session.SetString("id", UserId); 
+                return RedirectToAction("ManagerIndex");
             }
             else {
-                TempData["result"] = "no";
+                 
+                TempData["msg"] = "账号或密码错误！";
+                
+                return RedirectToAction("Login");
+                
             }
 
-            return RedirectToAction("Success");
+            
             
             //retu View("Success");
             
@@ -74,6 +82,23 @@ namespace MyCore.Controllers
 
         public IActionResult Success()
         {
+            return View();
+        }
+
+        public IActionResult ManagerIndex()
+        {
+            
+            string currectID = HttpContext.Session.GetString("id");
+            DataTable dt = new WebApi.Service.IndexService().GetLeftMenu(currectID);
+
+            string strSql = null;
+            DataView dv = null;
+            //strSql = "flagMenuType='0' AND pid='" & pid & "'"
+            strSql = " pid in (1,2,3,4) ";
+            dv = new DataView(dt, strSql, "sort", DataViewRowState.CurrentRows);
+            
+
+
             return View();
         }
 
