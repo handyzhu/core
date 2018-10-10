@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApi</name>
+    </assembly>
+    <members>
+        <member name="M:WebApi.Business.LoginBusness.getdvSubGroupByPid(System.Data.DataTable,System.String)">
+            <summary>
+            获取子目录
+            </summary>
+            <param name="dt"></param>
+            <param name="pid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Service.IndexService.GetLeftMenu(System.String)">
+            <summary>
+            获得所有目录
+            </summary>
+            <param name="id">工号</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Service.LoginService.InsertLoginInfo(System.String)">
+            <summary>
+            记录登陆信息
+            </summary>
+            <param name="id">工号</param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.SQLHelper.GetTable(System.String,System.Data.SqlClient.SqlParameter[],System.Data.CommandType)">
+            <summary>
+            执行查询，返回DataTable对象
+            </summary>
+            <param name="strSQL">sql语句</param>
+            <param name="pas">参数数组</param>
+            <param name="cmdtype">Command类型</param>
+            <returns>DataTable对象</returns>
+        </member>
+        <member name="M:Common.SQLHelper.GetDataSet(System.String,System.Data.SqlClient.SqlParameter[],System.Data.CommandType)">
+            <summary>
+            执行查询，返回DataSet对象
+            </summary>
+            <param name="strSQL">sql语句</param>
+            <param name="pas">参数数组</param>
+            <param name="cmdtype">Command类型</param>
+            <returns>DataSet对象</returns>
+        </member>
+        <!-- 对于成员“M:Common.SQLHelper.ExcuteSQL(System.String,System.Data.SqlClient.SqlParameter[],System.Data.CommandType)”忽略有格式错误的 XML 注释 -->
+        <member name="M:Common.SQLHelper.ExcuteScalarSQL(System.String,System.Data.SqlClient.SqlParameter[],System.Data.CommandType)">
+            <summary>
+            执行SQL语句，返回第一行，第一列
+            </summary>
+            <param name="strSQL">要执行的SQL语句</param>
+            <param name="paras">参数列表，没有参数填入null</param>
+            <returns>返回影响行数</returns>
+        </member>
+        <member name="M:Common.SQLHelper.GetObjectByProc(System.String)">
+            <summary>
+            调用不带参数的存储过程获取单个值
+            </summary>
+            <param name="ProcName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.SQLHelper.GetObjectByProc(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            调用带参数的存储过程获取单个值
+            </summary>
+            <param name="ProcName"></param>
+            <param name="paras"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.SQLHelper.GetObject(System.String)">
+            <summary>
+            根据sql语句获取单个值
+            </summary>
+            <param name="strSQL"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.SQLHelper.GetObject(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            根据sql语句 和 参数数组获取单个值
+            </summary>
+            <param name="strSQL"></param>
+            <param name="paras"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.SQLHelper.GetObject(System.String,System.Data.SqlClient.SqlParameter[],System.Data.CommandType)">
+            <summary>
+            执行SQL语句，返回首行首列
+            </summary>
+            <param name="strSQL">要执行的SQL语句</param>
+            <param name="paras">参数列表，没有参数填入null</param>
+            <returns>返回的首行首列</returns>
+        </member>
+        <member name="M:Common.SQLHelper.GetReaderByProc(System.String)">
+            <summary>
+            调用不带参数的存储过程，返回DataReader对象
+            </summary>
+            <param name="procName">存储过程名称</param>
+            <returns>DataReader对象</returns>
+        </member>
+        <member name="M:Common.SQLHelper.GetReaderByProc(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            调用带有参数的存储过程，返回DataReader对象
+            </summary>
+            <param name="procName">存储过程名</param>
+            <param name="paras">参数数组</param>
+            <returns>DataReader对象</returns>
+        </member>
+        <member name="M:Common.SQLHelper.GetReader(System.String)">
+            <summary>
+            根据sql语句返回DataReader对象
+            </summary>
+            <param name="strSQL">sql语句</param>
+            <returns>DataReader对象</returns>
+        </member>
+        <member name="M:Common.SQLHelper.GetReader(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            根据sql语句和参数返回DataReader对象
+            </summary>
+            <param name="strSQL">sql语句</param>
+            <param name="paras">参数数组</param>
+            <returns>DataReader对象</returns>
+        </member>
+        <member name="M:Common.SQLHelper.GetReader(System.String,System.Data.SqlClient.SqlParameter[],System.Data.CommandType)">
+            <summary>
+            查询SQL语句获取DataReader
+            </summary>
+            <param name="strSQL">查询的SQL语句</param>
+            <param name="paras">参数列表，没有参数填入null</param>
+            <returns>查询到的DataReader（关闭该对象的时候，自动关闭连接）</returns>
+        </member>
+        <member name="M:Common.SQLHelper.BulkToDB(System.Data.DataTable,System.String)">
+            <summary>
+            往数据库中批量插入数据
+            </summary>
+            <param name="sourceDt">数据源表</param>
+            <param name="targetTable">服务器上目标表</param>
+        </member>
+    </members>
+</doc>

@@ -9,3 +9,4 @@ D:\github\cube\core\WebApi\bin\Debug\netcoreapp2.0\WebApi.pdb
 D:\github\cube\core\WebApi\obj\Debug\netcoreapp2.0\WebApi.dll
 D:\github\cube\core\WebApi\obj\Debug\netcoreapp2.0\WebApi.pdb
 D:\github\cube\core\WebApi\obj\Debug\netcoreapp2.0\WebApi.csprojAssemblyReference.cache
+D:\github\cube\core\WebApi\bin\Debug\netcoreapp2.0\WebApi.xml
